@@ -24,7 +24,7 @@ function App() {
             </div>
           }>
           </Route>
-          <Route path='/' element={
+          <Route path='/home' element={
             <div className='app-body'>
               <SideBar />
               <RecommandationVideos />

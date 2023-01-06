@@ -19,11 +19,12 @@ function SideBar() {
   useEffect(()=>{
     setSelectedRow(location.pathname)
   }, [location])
-
+ 
   return (
+    
     <div className='sidebar'>
-      <Link to="/">
-      <SideBarRow selected ={selectedRow?.includes("/")? true: false}  title ="Home" Icon ={HomeIcon}/></Link>
+      <Link to="/home">
+      <SideBarRow selected ={selectedRow?.includes("/home")}  title ="Home" Icon ={HomeIcon}/></Link>
     
       <Link to="/trending">
       <SideBarRow selected ={selectedRow?.includes("/trending")} title ="Trendings" Icon = {WhatsAppIcon} />

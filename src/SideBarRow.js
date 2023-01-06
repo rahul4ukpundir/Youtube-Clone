@@ -1,12 +1,9 @@
 import React from 'react'
 import "./SideBarRow.css";
-import { useLocation } from 'react-router';
 const SideBarRow = ({selected,title, Icon}) => {
-  
-  const currentRoute = useLocation().pathname;
-
+  const isActive = selected ? `sideBarRow ${selected && 'selected'}` : 'sideBarRow'
   return (
-    <div className={`sideBarRow ${selected && 'selected'}`}>
+    <div className={isActive}>
         <Icon className="sideBarRow_icon"/>
         <span className='sideBarRow_title'>{title}</span>
     </div>
