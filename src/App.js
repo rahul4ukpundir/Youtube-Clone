@@ -24,13 +24,20 @@ function App() {
             </div>
           }>
           </Route>
-          <Route path='/home' element={
+          <Route path='/' element={
             <div className='app-body'>
               <SideBar />
               <RecommandationVideos />
             </div>
 
           }>
+            <Route path='/home' element={
+            <div className='app-body'>
+              <SideBar />
+              <RecommandationVideos />
+            </div>
+
+          }></Route>
           </Route>
           <Route path="/trending"
 
