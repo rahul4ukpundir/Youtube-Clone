@@ -1,0 +1,15 @@
+.sidebar{
+    flex: 0.2;
+    
+}
+
+.sidebar>hr{
+    height: 1px;
+    border:0;
+    margin-top:10px;
+    margin-bottom: 10px;;
+    background-color: lightgray;
+}
+.sideBar-link{
+    text-decoration: none;
+}
